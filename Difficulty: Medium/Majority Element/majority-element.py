@@ -18,12 +18,15 @@ class Solution:
                 ele=arr[i]
                 cnt=1
                 
-        cnt = 0
-        for x in arr:
-            if x == ele:
-                cnt += 1
-
-        if cnt > n // 2:
+        # cnt = 0
+        # for x in arr:
+        #     if x == ele:
+        #         cnt += 1
+        
+        
+        act_cnt=arr.count(ele)
+        
+        if act_cnt > n // 2:
             return ele
         return -1
                 
