@@ -1,7 +1,5 @@
 class Solution:
-    #Function to return list containing first n fibonacci numbers.
     def fibonacciNumbers(self,n):
-        # your code here
         
         a=0
         b=1
