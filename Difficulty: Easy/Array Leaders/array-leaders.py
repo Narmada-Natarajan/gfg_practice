@@ -1,14 +1,11 @@
 class Solution:
     def leaders(self, arr):
         
-        ans=[]
-        maxi=float('-inf')
-        
-        for i in range(len(arr)-1,-1,-1): #Traverse from right to left
-            if arr[i]>=maxi:
-                ans.append(arr[i])
-                maxi=arr[i]
+        maxr=arr[-1]
+        ans=[arr[-1]]
+        for i in range(len(arr)-2,-1,-1):
+            if arr[i]>=maxr:
+                maxr=arr[i]
+                ans.append(maxr)
                 
-        # Reverse for original order
         return ans[::-1]
-        
