@@ -3,11 +3,9 @@
 """
 (Divide and Conquer Technique)
 Partition
-
-1.Find 
-
-
-
+1.Choose a pivot
+2.Split the numbers into values smaller than, equal to, and greater than the pivot.
+3. Recursively quick-sort the left and right parts.
 """
 
 def quicksort(arr):
