@@ -1,6 +1,13 @@
 class Solution:
     def printTillN(self, n):
     	
-    	for i in range(1,n+1):
-    	    print(i,end=" ")
+    	if n==0:
+    	    return
+    	self.printTillN(n-1)
+    	print(n,end=" ")
+    	
+   
+    
+    	
+    	    
     	
