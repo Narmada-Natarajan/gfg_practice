@@ -1,14 +1,19 @@
 class Solution:
-    def fibonacciNumbers(self,n):
+    def fibonacciNumbers(self, n: int) -> list[int]:
         
-        a=0
-        b=1
-        ans=[]
+        if n==0:
+            return []
+        if n==1:
+            return [0]
         
-        for i in range(n):
-            ans.append(a)
-            c=a+b
-            a=b
-            b=c
-        return ans
+        fib=[0,1]
+        
+        for i in range(2,n):
+            fib.append (fib[i-1]+fib[i-2])
+            
+        return fib
+        
+        
+        
+        
         
