@@ -12,14 +12,12 @@ class Solution:
        def height(node):
            
            if node is None:
-               
                return 0
                
            l=height(node.left)
            r=height(node.right)
             
            if l==-1 or r==-1:
-               
                return -1
                
            if abs(l-r)>1:
